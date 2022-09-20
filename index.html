@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding: 50px; margin: 0;
+            }
+        ul {
+            border-right: 1px solid gray;
+            width: 150px; margin:0;
+            padding: 40px;
+        }
+        body { margin: 0;}
+        #grid{
+            display: grid;
+            grid-template-columns: 270px 1fr;
+        }
+        @media(max-width: 900px){
+            #grid{
+                display: block;
+            }
+            ul{border-right:none;}
+            div{padding: 15px;}
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html".html">비전공자의 개발노트</a></h1>
+    <div id="grid">
+    <ul>
+        <li><a href="1.html">HTML 알아보기</a></li><br>
+        <li><a href="2.html">CSS 알아보기</a></li>
+    </ul>
+    <div>
+    <h2>안녕하세요! 🙋</h2>
+    
+    <p> 비전공자의 개발노트에 오신 걸 환영합니다<br>
+        이곳은 제가 공부한 내용을 정리하고 함께 나누는 공간 입니다<br>
+        아래 입력 폰을 통해 간단한 정보를 입력하시고 더 많은 정보를 함께 공부해봅시다
+    </p> 
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4GZbZ%2FbtrMljl8GIi%2F04tMChkCZ5Pbb8zMw1TlW1%2Fimg.png" height="200">
+    <p> <strong>👨‍💻당신은 개발 비전공자 인가요?</strong>
+        <select>
+            <option>네</option>
+            <option>아니오</option>
+        </select>
+    </p>
+    
+    <p> <strong>&#128218; 이곳에서 배우고 싶은 내용을 체크해주세요</strong></p>
+    <div>
+        <input type="checkbox" name="learn"/><label>HTML</label>
+        <input type="checkbox" name="learn"/><label>CSS</label>
+        <input type="checkbox" name="learn"/><label>Java script</label>
+        <input type="checkbox" name="learn"/><label>node.js</label>
+        <input type="checkbox" name="learn"/><label>python</label>
+        <input type="checkbox" name="learn"/><label>PHP</label>
+        <input type="checkbox" name="learn"/><label>Oauth2.0</label>
+    </div>
+    &#128172; 그 외 다른 배우고 싶은 언어가 있다면 적시해주세요
+        <input type="text">
+
+    <p> <strong>🕵️‍♀️ 가고자하는 개발자 유형은 어떤 것인가요?</strong></p>
+    <div>
+        <input type="radio" name="dream"/><label>Front-end</label>
+        <input type="radio" name="dream"/><label>Back-end</label>
+        <input type="radio" name="dream"/><label>Database</label>
+    </div>
+    &#128172; 그 외 다른 유형이 있다면 적시해주세요
+        <input type="text">
+    
+    <p><strong>🤷‍♀️ 마지막으로 개발노트를 찾은 이유를 알려주세요</strong></p>
+        <textarea></textarea>
+    </p><br>
+    <input type="button" onclick="alert('함께 열공합시다^^')" value="정보 보내기👻">
+    </div>
+    </div>
+</body>
+</html>
